@@ -1,0 +1,50 @@
+
+
+.check{
+    text-decoration: line-through;
+}
+li{
+  height: 100%;
+  border-radius: 5px;
+}
+.right{
+  float: right;
+}
+.card{
+  border-radius: 2px;
+}
+.urgent{
+  background: lightcoral;
+}
+
+.casual{
+  background: lightblue;
+}
+
+.warning{
+  background: lightsalmon;
+}
+
+
+.todolist{
+  background-color:#FFF;
+  padding:20px 20px 10px 20px;
+  margin-top:30px;
+}
+.todolist h1{
+  margin:0;
+  padding-bottom:20px;
+  text-align:center;
+}
+.form-control{
+  border-radius:0;
+}
+li.ui-state-default{
+  background:#fff;
+  border:none;
+  border-bottom:1px solid #ddd;
+}
+
+li.ui-state-default:last-child{
+  border-bottom:none;
+}

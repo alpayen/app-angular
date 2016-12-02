@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="todolist not-done">
+      <h1>Todos</h1>
+      <form (submit)="addTodo()">
+        <input type="text" class="form-control add-todo" placeholder="Add todo" name="text" [(ngModel)]="text" >
+      </form>
+      <hr>
+      <ul id="sortable" class="list-unstyled" >
+        <li [routerLink]="['/card', todo.id]" *ngFor="let todo of todos; let i=index" [ngClass]="todo.state">
+          <div class="checkbox">
+            <label [ngClass]="{'check' : todo.done}">
+              <input type="checkbox" [(ngModel)]=todo.done name="check" (click)="validateTodo(i)"/>{{todo.text}}</label>
+          <span>
+            <button (click)="deleteTodo(i)" class="right">
+              x
+            </button>
+          </span>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+/**fin du todo :
+
+-etat de tache
+-changement d'etat default/edit
+-tutorial -> routing sur Angular
+- **/

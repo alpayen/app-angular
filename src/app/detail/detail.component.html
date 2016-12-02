@@ -1,0 +1,6 @@
+<p>Todo id : {{single.id}}</p>
+<p>{{single.text}}</p>
+<h2>Type to update this TODO</h2>
+<input type="text" placeholder="Update Todo" (keyup)="updateTodo(single.id, single.text)" [(ngModel)]="single.text" name="text">
+
+
